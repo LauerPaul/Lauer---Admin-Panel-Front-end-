@@ -1,0 +1,31 @@
+{
+  "name": "sass-font-stacker",
+  "homepage": "https://github.com/synapticism/sass-font-stacker",
+  "authors": [
+    {
+      "name": "Alexander Synaptic",
+      "email": "alexander@synapticism.com",
+      "homepage": "http://synapticism.com"
+    }
+  ],
+  "main": "sass/index.scss",
+  "keywords": [
+    "sass",
+    "scss",
+    "font",
+    "fonts",
+    "fontstack",
+    "fontstacks",
+    "type",
+    "typography",
+    "chinese",
+    "cjw"
+  ],
+  "license": "MIT/GPLv3",
+  "ignore": [
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
