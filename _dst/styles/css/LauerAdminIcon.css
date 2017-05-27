@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'LauerAdmin';
-  src:  url('https://i.icomoon.io/public/temp/f38fd247b2/UntitledProject1/LauerAdmin.eot?asqm5t');
-  src:  url('https://i.icomoon.io/public/temp/f38fd247b2/UntitledProject1/LauerAdmin.eot?asqm5t#iefix') format('embedded-opentype'),
-    url('https://i.icomoon.io/public/temp/f38fd247b2/UntitledProject1/LauerAdmin.ttf?asqm5t') format('truetype'),
-    url('https://i.icomoon.io/public/temp/f38fd247b2/UntitledProject1/LauerAdmin.woff?asqm5t') format('woff'),
-    url('https://i.icomoon.io/public/temp/f38fd247b2/UntitledProject1/LauerAdmin.svg?asqm5t#LauerAdmin') format('svg');
+  src:  url('../fonts/LauerAdmin.eot?725hul');
+  src:  url('../fonts/LauerAdmin.eot?725hul#iefix') format('embedded-opentype'),
+    url('../fonts/LauerAdmin.ttf?725hul') format('truetype'),
+    url('../fonts/LauerAdmin.woff?725hul') format('woff'),
+    url('../fonts/LauerAdmin.svg?725hul#LauerAdmin') format('svg');
   font-weight: normal;
   font-style: normal;
 }
