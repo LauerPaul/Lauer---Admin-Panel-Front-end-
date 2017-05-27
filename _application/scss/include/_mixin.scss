@@ -10,3 +10,65 @@
 	-o-transition: $property;
 	transition: $property;
 }
+@mixin input-placeholder($color, $font) {
+    &.placeholder {
+        color: $color;
+        font-family: $font;
+    }
+    &:-moz-placeholder {
+        color: $color;
+        font-family: $font;
+    }
+    &::-moz-placeholder {
+        color: $color;
+        font-family: $font;
+    }
+    &:-ms-input-placeholder {
+        color: $color;
+        font-family: $font;
+    }
+    &::-webkit-input-placeholder {
+        color: $color;
+        font-family: $font;
+    }
+}
+@mixin center-absolute () {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+}
+
+@mixin box-shadow ($property_) {
+    -webkit-box-shadow: $property_;
+    -moz-box-shadow: $property_;
+    box-shadow: $property_;
+}
+
+
+// keyframes mixin
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+
+@mixin transition($param) {
+-webkit-transition: $param;
+   -moz-transition: $param;
+    -ms-transition: $param;
+     -o-transition: $param;
+        transition: $param;
+}

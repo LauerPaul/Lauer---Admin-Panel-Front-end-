@@ -1,0 +1,14 @@
+.circle-icon,
+.icon {
+	position: relative;
+	display: inline-block;
+
+	&::before,
+	&::after {
+		content: '';
+	}
+}
+
+.circle-icon {
+	@include border-radius(50%);
+}

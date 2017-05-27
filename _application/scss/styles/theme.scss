@@ -1,0 +1,24 @@
+* { outline: none; }
+a { cursor: pointer; }
+
+h1, h2, h3 { font-family: "OpenSansBold"; }
+
+span.new-mini {
+	left: -3px;
+    opacity: 1;
+	width: 15px;
+	height: 15px;
+	bottom: -2px;
+    display: block;
+    line-height: 15px;
+	position: absolute;
+	text-align: center;
+	color: $color-new-mini;
+	background: $bg-new-mini;
+	@include border-radius(50%);
+    @include transition(all 0.2s);
+	font-size: $font-size-new-mini;
+	font-family: $font-family-new-mini;
+    text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.5);
+	@include box-shadow (2px 2px 2px rgba(0, 0, 0, 0.5));
+}

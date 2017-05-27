@@ -1,0 +1,214 @@
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    top: 0;
+
+	.top-menu-section {
+		height: 54px;
+		padding-top: 12px;
+		padding-bottom: 12px;
+		background: $top-section-bg;
+		@include box-shadow ($top-section-boxShadow);
+
+		.logo-container {
+			width: 205px;
+			padding-left: 15px;
+
+			.left-menu-btn-toggle,
+			.wrapper-btn-toggle,
+			.logo {
+				position: relative;
+				display: table-cell;
+				vertical-align: middle;
+			}
+
+			.logo {
+				width: 160px;
+				height: 30px;
+
+				img {
+					max-width: 100%;
+					height: auto;
+				}
+			}
+
+			.wrapper-btn-toggle {
+				height: 30px;
+			}
+
+			.left-menu-btn-toggle {
+				width: 20px;
+
+
+				.icon-toggle-menu {
+					width: 16px;
+					height: 12px;
+					display: inline-block;
+					border-top: 2px solid $gray-dark;
+					@include transition(all 0.5s);
+
+					&::before, &::after {
+						left: 0px;
+						height: 2px;
+						position: absolute;
+						background: $gray-dark;
+					}
+					&::before {
+						top: 3px;
+						width: 13px;
+						@include transition(all 0.3s);
+					}
+					&::after {
+						width: 10px;
+						bottom: 0px;
+						@include transition(all 0.1s);
+					}
+
+					&:hover {
+						border-color: $red;
+						width: 10px;
+
+						&::before, &::after {
+							background: $red;
+						}
+						&::after {
+							width: 16px;
+						}
+					}
+
+					&.insert {
+						width: 10px;
+
+						&::after {
+							width: 16px;
+						}
+
+						&:hover {
+							width: 16px;
+
+							&::after {
+								width: 10px;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.right-section {
+			.circle-icon {
+				width: 30px;
+				height: 30px;
+				margin-right: 5px;
+				text-align: center;
+
+				&.full-window {
+					background: $purpure;
+				}
+				&.info-popup {
+					background: $light-blue;
+				}
+				&.chat-popup {
+					background: $blue;
+				}
+				&.settings-menu {
+					background: $red;
+				}
+
+				[class^="lauer-"],
+				[class*=" lauer-"] {
+					color: #fff;
+					line-height: 30px;
+				}
+
+				&:hover {
+					margin-top: -1px;
+					@include box-shadow (2px 2px 2px rgba(0,0,0,.3));
+   					text-shadow: 2px 1px 1px rgba(150, 150, 150, 0.66);
+
+					> i {
+						animation-name: active-font;
+	   					animation-duration: 0.5s;
+	   					font-size: 15px;
+					}
+
+					> span.new-mini {
+						opacity: 0;
+					}
+
+				}
+				&:active {
+					@include box-shadow (inset 2px 2px 2px rgba(0,0,0,.3));
+   					text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.4);
+				}
+
+
+			}
+		}
+
+	}
+
+	.container-fluid.top-hide-menu-wrapper {
+		left: 0;
+		right: 0;
+		z-index: 15;
+		width: 100%;
+		top: -165px;
+		opacity: 0.2;
+		height: 160px;
+		color: #ffffff;
+		position: fixed;
+		@include transition(all 0.7s);
+		background: grey url(../../images/bg/settings-bg.png) no-repeat center top;
+		@include box-shadow(0px 0px 4px 0px rgba(0, 0, 0, 1));
+		background-size: 100%;
+
+		&.open {
+			top: 0px;
+			opacity: 1;
+		}
+
+		.info-cms{
+			padding-top: 35px;
+
+			h2.name{
+				font-size: 14px;
+				text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.4);
+			}
+			p.description {
+				font-size: 12px;
+				color: rgba(255, 255, 255, 0.74);
+			}
+		}
+
+		.right-section {
+			position: relative;
+
+			.close-btn {
+				top: 15px;
+				width: 26px;
+				right: -10px;
+				height: 26px;
+				text-align: center;
+				position: absolute;
+				background: #ffffff;
+				@include border-radius(2px);
+
+				> i {
+					font-size: 12px;
+					line-height: 24px;
+					color: $gray-dark;
+				}
+
+				&:hover {
+					> i {
+						font-size: 14px;
+					}
+				}
+
+			}
+		}
+	}
+
+}
