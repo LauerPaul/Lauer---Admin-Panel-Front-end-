@@ -24,7 +24,7 @@
     <!-- /++++++++++++++++++* SCRIPT Jquery END *++++++++++++++++++/-->
   </head>
 </html>
-<body class="mini-menu">
+<body>
   <!-- /---------- HEADER ----------/ -->
   <header>
     <!-- /---------- Top hide menu -----/ -->
@@ -108,11 +108,110 @@
   </div>
   <!-- / --------- *LEFT MENU END* --------- -->
   <div class="content-wrapper container-fluid">
-    <section>
-      <div class="top-line"></div>
-      <h3 class="title">Name section</h3>
-      <div class="description">Description section</div>
-    </section>
+    <ol class="breadcrumb">
+      <li><a href="#">Developer</a></li>
+      <li class="active">Translations</li>
+    </ol>
+    <div class="row">
+      <div class="col-md-7">
+        <!-- / ---------- SECTION WORDS ----------/-->
+        <section>
+          <div class="section-head">
+            <div class="top-line">
+              <div class="right-block"><a class="btn-top" data-toggle="tooltip" data-placement="top" title="Refresh section"><i class="fa fa-refresh"></i></a><a class="btn-top" data-toggle="tooltip" data-placement="top" title="Full window section"><i class="glyphicon glyphicon-resize-full"></i></a></div>
+              <div class="clearfix"></div>
+            </div>
+            <h3 class="title">Translations</h3>
+            <div class="description">Developer section</div>
+            <div class="search-line">
+              <div class="input-group">
+                <input class="form-control" type="text" placeholder="Search..."/><span class="input-group-addon" data-toggle="tooltip" data-placement="top" title="Push for search"><i class="fa fa-search"></i></span>
+              </div>
+              <div class="col-md-4"></div>
+              <div class="col-md-4"></div>
+            </div>
+          </div>
+          <div class="section-body">
+            <div class="results-search">
+              <div class="wrapper-list">
+                <!-- ITEM-->
+                <div class="item w-50"><span>Item</span>
+                  <div class="pull-right"><a class="btn-revove"><i class="fa fa-times"></i></a></div>
+                  <div class="clearfix"></div>
+                </div>
+                <!-- ITEM-->
+                <div class="item w-50"><span>Item</span>
+                  <div class="pull-right"><a class="btn-revove"><i class="fa fa-times"></i></a></div>
+                  <div class="clearfix"></div>
+                </div>
+                <!-- ITEM-->
+                <div class="item w-50"><span>Item</span>
+                  <div class="pull-right"><a class="btn-revove"><i class="fa fa-times"></i></a></div>
+                  <div class="clearfix"></div>
+                </div>
+                <!-- ITEM-->
+                <div class="item w-50"><span>Item</span>
+                  <div class="pull-right"><a class="btn-revove"><i class="fa fa-times"></i></a></div>
+                  <div class="clearfix"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- / ------- *SECTION WORDS END* -------/-->
+      </div>
+      <div class="col-md-5">
+        <!-- / ---------- SECTION WORDS ----------/-->
+        <section>
+          <div class="section-head">
+            <div class="top-line">
+              <div class="right-block"><a class="btn-top" data-toggle="tooltip" data-placement="top" title="Refresh section"><i class="fa fa-refresh"></i></a><a class="btn-top" data-toggle="tooltip" data-placement="top" title="Full window section"><i class="glyphicon glyphicon-resize-full"></i></a></div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+          <h3 class="title">Add word</h3>
+          <div class="description">edit translation</div>
+          <form class="section-body">
+            <div class="input-group margin">
+              <input class="form-control" type="text" placeholder="Enter label word..."/><span class="input-group-addon" data-toggle="tooltip" title="Key word"><i class="lauer-info"></i></span>
+            </div>
+            <div class="input-group margin">
+              <input class="form-control" type="text" placeholder="Enter translate..."/><span class="input-group-addon lang"><strong>RU</strong></span>
+            </div>
+            <div class="input-group margin">
+              <input class="form-control" type="text" placeholder="Enter translate..."/><span class="input-group-addon lang"><strong>UA</strong></span>
+            </div>
+            <div class="input-group margin">
+              <input class="form-control" type="text" placeholder="Enter translate..."/><span class="input-group-addon lang"><strong>EN</strong></span>
+            </div>
+            <div class="input-group margin">
+              <input class="form-control" type="text" placeholder="Enter translate..."/><span class="input-group-addon lang"><strong>DE</strong></span>
+            </div>
+            <button class="btn btn-default margin-top-20">Add new word</button>
+          </form>
+        </section>
+        <!-- / ------- *SECTION WORDS END* -------/-->
+      </div>
+    </div>
+    <!-- /+++++++++++++++++++++ SCRIPTS +++++++++++++++++++++/-->
+    <!--Bootstrap js include-->
+    <script src="js/_lib/bootstrap.min.js"></script>
+    <!--Bootstrap select js-->
+    <script src="js/_lib/bootstrap-select.js"></script>
+    <!--Bootstrap Notify-->
+    <script src="js/_lib/bootstrap-notify.min.js"></script>
+    <!--MouseWheel js-->
+    <script src="js/_lib/jquery.mousewheel.min.js"></script>
+    <!--Scroll pane js-->
+    <script src="js/_lib/jquery.jscrollpane.min.js"></script>
+    <!--Scroll iCheck-->
+    <script src="js/_lib/icheck.min.js"></script>
+    <!-- -------------------------------------------------------->
+    <!--Scripts-->
+    <script src="js/notify.js"></script>
+    <!--Scripts-->
+    <script src="js/scripts.js"></script>
+    <!-- /++++++++++++++++++* SCRIPTS END *++++++++++++++++++++/-->
     <footer>
       <div class="left-column-lauer">
         <div class="copyright">©2017 Lauer CMS povered for Site.com</div>

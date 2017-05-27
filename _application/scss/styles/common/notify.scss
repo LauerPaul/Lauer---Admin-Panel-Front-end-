@@ -1,0 +1,21 @@
+.alert {
+	background: #ffffff;
+	padding: 20px;
+	border: none;
+	color: $gray;
+	font-size: 14px;
+	@include box-shadow($top-section-boxShadow);
+
+	&.alert-success {
+		color: #ffffff;
+		background: $purpure;
+	}
+	&.alert-danger {
+		color: #ffffff;
+		background: $red;
+	}
+	&.alert-info {
+		color: #ffffff;
+		background: $blue;
+	}
+}

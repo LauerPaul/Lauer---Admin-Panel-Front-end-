@@ -1,12 +1,21 @@
 include include/common/head
-body.mini-menu
+body
 	include include/common/header
 	include include/common/left-menu
 
 	.content-wrapper.container-fluid
-		section
-			.top-line
-			h3.title Name section
-			.description Description section
 
+		ol.breadcrumb
+			li
+				a(href="#") Developer
+			li.active Translations
+
+		.row
+			.col-md-7
+				include include/sections/words
+
+			.col-md-5
+				include include/sections/add-words
+
+		include include/common/bottom_scripts
 		include include/common/footer
