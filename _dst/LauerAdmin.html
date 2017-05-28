@@ -37,7 +37,7 @@
       </div>
       <div class="col-md-4"></div>
       <div class="col-md-4">
-        <div class="right-section"><a class="close-btn hvr-shrink"><i class="fa fa-times"></i></a></div>
+        <div class="right-section"><a class="close-btn hvr-shrink" data-action-click="hideTopMenu"><i class="fa fa-times"></i></a></div>
       </div>
     </div>
     <!-- /----- *Top hide menu END* ----/ -->
@@ -49,7 +49,7 @@
             <div class="pull-left"><a class="logo" href="/"><img src="images/test-content/logo.png" alt="Lauer CMS"/></a></div>
             <div class="pull-right">
               <div class="wrapper-btn-toggle">
-                <div class="left-menu-btn-toggle"><a class="icon icon-toggle-menu" data-toggle="tooltip" data-placement="right" title="text"></a></div>
+                <div class="left-menu-btn-toggle"><a class="icon icon-toggle-menu" data-toggle="tooltip" data-placement="right" title="text" data-action-click="toggleLeftMenu"></a></div>
               </div>
             </div>
           </div>
@@ -57,7 +57,7 @@
         </div>
         <div class="col-md-6 col-sm-4"></div>
         <div class="col-md-3 col-sm-4">
-          <div class="right-section pull-right"><a class="circle-icon info-popup" data-toggle="tooltip" data-placement="left" title="text"><i class="lauer-info"></i><span class="new-mini">12</span></a><a class="circle-icon chat-popup" data-toggle="tooltip" data-placement="left" title="text"><i class="lauer-chat"></i></a><a class="circle-icon settings-menu" data-toggle="tooltip" data-placement="left" title="text"><i class="lauer-settings-w"></i></a><a class="circle-icon full-window" data-toggle="tooltip" data-placement="left" title="text"><i class="lauer-full"></i></a></div>
+          <div class="right-section pull-right"><a class="circle-icon info-popup" data-toggle="tooltip" data-placement="bottom" title="text"><i class="lauer-info"></i><span class="new-mini">12</span></a><a class="circle-icon chat-popup" data-toggle="tooltip" data-placement="bottom" title="text"><i class="lauer-chat"></i></a><a class="circle-icon settings-menu" data-toggle="tooltip" data-placement="bottom" title="text" data-action-click="showTopMenu"><i class="lauer-settings-w"></i></a><a class="circle-icon full-window" data-toggle="tooltip" data-placement="bottom" title="text" data-action-click="fullScreen"><i class="lauer-full"></i></a></div>
           <div class="clearfix"></div>
         </div>
       </div>
@@ -110,15 +110,15 @@
   <div class="content-wrapper container-fluid">
     <ol class="breadcrumb">
       <li><a href="#">Developer</a></li>
-      <li class="active">Translations</li>
+      <li class="active" data-action-click="test">Translations</li>
     </ol>
     <div class="row">
       <div class="col-md-7">
         <!-- / ---------- SECTION WORDS ----------/-->
-        <section>
+        <section class="full-screen-1">
           <div class="section-head">
             <div class="top-line">
-              <div class="right-block"><a class="btn-top" data-toggle="tooltip" data-placement="top" title="Refresh section"><i class="fa fa-refresh"></i></a><a class="btn-top" data-toggle="tooltip" data-placement="top" title="Full window section"><i class="glyphicon glyphicon-resize-full"></i></a></div>
+              <div class="right-block"><a class="btn-top" data-toggle="tooltip" data-placement="top" title="Refresh section"><i class="fa fa-refresh"></i></a><a class="btn-top" data-toggle="tooltip" data-placement="top" title="Full window section" data-action-click="fullScreen" data-fullscreen-object=".full-screen-1"><i class="glyphicon glyphicon-resize-full"></i></a></div>
               <div class="clearfix"></div>
             </div>
             <h3 class="title">Translations</h3>
@@ -162,10 +162,10 @@
       </div>
       <div class="col-md-5">
         <!-- / ---------- SECTION WORDS ----------/-->
-        <section>
+        <section class="full-screen-2">
           <div class="section-head">
             <div class="top-line">
-              <div class="right-block"><a class="btn-top" data-toggle="tooltip" data-placement="top" title="Refresh section"><i class="fa fa-refresh"></i></a><a class="btn-top" data-toggle="tooltip" data-placement="top" title="Full window section"><i class="glyphicon glyphicon-resize-full"></i></a></div>
+              <div class="right-block"><a class="btn-top" data-toggle="tooltip" data-placement="top" title="Refresh section"><i class="fa fa-refresh"></i></a><a class="btn-top" data-toggle="tooltip" data-placement="top" title="Full window section" data-action-click="fullScreen" data-fullscreen-object=".full-screen-2"><i class="glyphicon glyphicon-resize-full"></i></a></div>
               <div class="clearfix"></div>
             </div>
           </div>
@@ -194,6 +194,8 @@
       </div>
     </div>
     <!-- /+++++++++++++++++++++ SCRIPTS +++++++++++++++++++++/-->
+    <!--FullScreen js include-->
+    <script src="js/_lib/jquery.fullscreen-min.js"></script>
     <!--Bootstrap js include-->
     <script src="js/_lib/bootstrap.min.js"></script>
     <!--Bootstrap select js-->
@@ -208,8 +210,7 @@
     <script src="js/_lib/icheck.min.js"></script>
     <!-- -------------------------------------------------------->
     <!--Scripts-->
-    <script src="js/notify.js"></script>
-    <!--Scripts-->
+    <script src="js/click_actions.js"></script>
     <script src="js/scripts.js"></script>
     <!-- /++++++++++++++++++* SCRIPTS END *++++++++++++++++++++/-->
     <footer>
