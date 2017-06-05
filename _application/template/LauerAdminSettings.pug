@@ -1,0 +1,19 @@
+include include/common/head
+body
+	include include/common/header
+	include include/common/left-menu
+
+	.content-wrapper.container-fluid.video
+		#video-bg
+			video(src="video/settings.mp4", width="100%", height="auto", preload="auto", autoplay="autoplay", loop="loop")
+
+		ol.breadcrumb
+			li
+				a(href="#") Developer
+			li.active(data-action-click="test") Settings
+
+		.row
+			include include/settings/settingsIcon
+
+		include include/common/bottom_scripts
+		include include/common/footer

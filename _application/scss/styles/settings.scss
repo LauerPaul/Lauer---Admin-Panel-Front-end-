@@ -1,0 +1,97 @@
+.tab-menu.mainSettings {
+	background: $top-section-bg url(../../images/bg/mainSettings.jpg) no-repeat right center;
+}
+.tab-menu.mailSettings {
+	background: $top-section-bg url(../../images/bg/mailSettings.jpg) no-repeat right center;
+}
+.tab-menu.langsSettings {
+	background: $top-section-bg url(../../images/bg/langsSettings.jpg) no-repeat right center;
+}
+.tab-menu.smtpSettings {
+	background: $top-section-bg url(../../images/bg/smtpSettings.jpg) no-repeat right center;
+}
+.tab-menu.contactsSettings {
+	background: $top-section-bg url(../../images/bg/contactsSettings.jpg) no-repeat right center;
+}
+#video-bg {
+	position: fixed;
+	top: 54px;
+	left: 220px;
+	right: 0;
+	bottom: 54px;
+
+	&::before {
+		content: '';
+		position: fixed;
+		left: 220px;
+		right: 0;
+		top: 54px;
+		bottom: 54px;
+		background: rgba(254, 254, 254, 0.8);
+	}
+}
+.mini-menu {
+	#video-bg {
+		left: 70px;
+
+		&::before {
+			left: 70px;
+		}
+	}
+}
+.content-wrapper.video {
+	.breadcrumb {
+		position: relative;
+		z-index: 1;
+	}
+}
+.logo-load {
+	font-size: 52px;
+    line-height: 0px;
+    color: #bebcbd;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin-bottom: 10px;
+    float: left;
+    clear: both;
+
+    &:last-child {
+    	margin-bottom: 0px;
+    }
+
+    i {
+	    float: left;
+	    display: inline-block;
+    }
+
+    span {
+	    font-size: 14px;
+	    float: left;
+	    line-height: 48px;
+	    margin-left: 5px;
+	    font-family: "OpenSansBold";
+    }
+
+    input[type="file"] {
+    	position: absolute;
+    	left: 0;
+    	right: 0;
+    	top: 0;
+    	bottom: 0;
+    	opacity: 0;
+    	cursor: pointer;
+    }
+
+    &:hover {
+    	color: $blue;
+    	cursor: pointer;
+	    input[type="file"] {
+    		cursor: pointer;
+	    }
+    }
+}
+.content-wrapper.container-fluid section.mainSettings {
+	padding-left: 25px;
+	padding-right: 25px;
+}

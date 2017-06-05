@@ -7,8 +7,8 @@
 	@include box-shadow($top-section-boxShadow);
 
 	&.alert-success {
-		color: #ffffff;
-		background: $purpure;
+		color: green;
+		background: #ffffff;
 	}
 	&.alert-danger {
 		color: #ffffff;

@@ -1,11 +1,11 @@
 footer {
 	background: $top-section-bg;
 	height: 54px;
-	position: absolute;
+	position: fixed;
 	padding: 12px 0;
 	bottom: 0;
 	right: 0;
-	left: 0;
+	left: 220px;
 	@include box-shadow($top-section-boxShadow);
 
 	.left-column-lauer {
@@ -20,5 +20,10 @@ footer {
 		    line-height: 30px;
 			display: inline-block;
 		}
+	}
+}
+.mini-menu {
+	footer {
+		left: 70px;
 	}
 }

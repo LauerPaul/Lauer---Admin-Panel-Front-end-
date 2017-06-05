@@ -23,7 +23,24 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+.lauer-add:before {
+  content: "\e90b";
+}
+.lauer-plus:before {
+  content: "\e90b";
+}
+.lauer-image:before {
+  content: "\e90c";
+}
+.lauer-picture:before {
+  content: "\e90c";
+}
+.lauer-photo:before {
+  content: "\e90c";
+}
+.lauer-graphic:before {
+  content: "\e90c";
+}
 .lauer-settings:before {
   content: "\e900";
 }

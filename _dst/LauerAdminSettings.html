@@ -1,0 +1,173 @@
+
+<html>
+  <head>
+    <!-- /+++++++++++++++++++++ META +++++++++++++++++++++/-->
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="language" content="RU"/>
+    <title>Lauer Admin Panel</title>
+    <!-- /+++++++++++++++++++++ STYLES +++++++++++++++++++++/-->
+    <!--font-awesome css-->
+    <link rel="stylesheet" href="styles/css/_lib/font-awesome.min.css"/>
+    <!--bootstrap-select.min.css-->
+    <link rel="stylesheet" href="styles/css/_lib/bootstrap-select.min.css"/>
+    <!--ui css-->
+    <link rel="stylesheet" href="styles/css/_lib/jquery-ui.css"/>
+    <!--default styles-->
+    <link rel="stylesheet" href="styles/css/_lib/hover-min.css"/>
+    <link rel="stylesheet" href="styles/css/LauerAdminIcon.css"/>
+    <link rel="stylesheet" href="styles/css/LauerAdmin.css"/>
+    <!-- /++++++++++++++++++* STYLES END *++++++++++++++++++/-->
+    <!-- /+++++++++++++++++++++ SCRIPT Jquery +++++++++++++++++++++/-->
+    <script src="js/_lib/jquery-3.1.1.min.js"></script>
+    <script src="js/_lib/jquery-ui.min.js"></script>
+    <!-- /++++++++++++++++++* SCRIPT Jquery END *++++++++++++++++++/-->
+  </head>
+</html>
+<body>
+  <!-- /---------- HEADER ----------/ -->
+  <header>
+    <!-- /---------- Top hide menu -----/ -->
+    <div class="container-fluid top-hide-menu-wrapper">
+      <div class="col-md-4">
+        <div class="info-cms">
+          <h2 class="name">LAUER CMS</h2>
+          <p class="description">Convenience and success in one system...</p>
+        </div>
+      </div>
+      <div class="col-md-4"></div>
+      <div class="col-md-4">
+        <div class="right-section"><a class="close-btn hvr-shrink" data-action-click="hideTopMenu"><i class="fa fa-times"></i></a></div>
+      </div>
+    </div>
+    <!-- /----- *Top hide menu END* ----/ -->
+    <!-- /---------- Top menu ----------/ -->
+    <div class="top-menu-section container-fluid">
+      <div class="row">
+        <div class="col-md-3 col-sm-4">
+          <div class="logo-container">
+            <div class="pull-left"><a class="logo" href="/"><img src="images/test-content/logo.png" alt="Lauer CMS"/></a></div>
+            <div class="pull-right">
+              <div class="wrapper-btn-toggle">
+                <div class="left-menu-btn-toggle"><a class="icon icon-toggle-menu" data-toggle="tooltip" data-placement="right" title="text" data-action-click="toggleLeftMenu"></a></div>
+              </div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="col-md-6 col-sm-4"></div>
+        <div class="col-md-3 col-sm-4">
+          <div class="right-section pull-right"><a class="circle-icon info-popup" data-toggle="tooltip" data-placement="bottom" title="text"><i class="lauer-info"></i><span class="new-mini">12</span></a><a class="circle-icon chat-popup" data-toggle="tooltip" data-placement="bottom" title="text"><i class="lauer-chat"></i></a><a class="circle-icon settings-menu" data-toggle="tooltip" data-placement="bottom" title="text" data-action-click="showTopMenu"><i class="lauer-settings-w"></i></a><a class="circle-icon full-window" data-toggle="tooltip" data-placement="bottom" title="text" data-action-click="fullScreen"><i class="lauer-full"></i></a></div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+    <!-- /------- *Top menu END* -------/ -->
+  </header>
+  <!-- /------- *HEADER* -------/ -->
+  <!-- / --------- LEFT MENU --------- -->
+  <div class="container-fluid left-menu">
+    <div class="wrapper-left-menu">
+      <div class="user-info-section">
+        <div class="user-photo-wrapper">
+          <!-- USER PHOTO--><img src="images/test-content/user.jpg" alt=""/>
+        </div>
+        <div class="user-info">
+          <!-- USER NAME-->
+          <div class="user-name">Paul Lauer</div>
+          <!-- USER STATUS-->
+          <div class="user-status">Admin</div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="menu-section">
+        <div class="title-menu">ADMIN MENU</div>
+        <div class="list-menu-wrapper">
+          <!-- MENU ITEM-->
+          <div class="item-wrapper"><a class="item-menu-admin" href="#"><i class="lauer-puzzle"></i><span>Modules</span></a></div>
+          <!-- MENU ITEM-->
+          <div class="item-wrapper"><a class="item-menu-admin slide"><i class="lauer-page"></i><span>Pages</span></a></div>
+          <!-- MENU ITEM-->
+          <div class="item-wrapper"><a class="item-menu-admin slide active"><i class="lauer-search"></i><span>SEO</span></a>
+            <ul class="wrapper-sub-menu">
+              <li><a class="active" href="#"><i class="fa fa-circle-o-notch"></i>Item</a></li>
+              <li><a href="#"><i class="fa fa-circle-o-notch"></i>Item</a></li>
+              <li><a href="#"><i class="fa fa-circle-o-notch"></i>Item</a></li>
+              <li><a href="#"><i class="fa fa-circle-o-notch"></i>Item</a></li>
+            </ul>
+          </div>
+          <!-- MENU ITEM-->
+          <div class="item-wrapper"><a class="item-menu-admin slide"><i class="lauer-mail"></i><span>E-Mail</span></a></div>
+          <!-- MENU ITEM-->
+          <div class="item-wrapper"><a class="item-menu-admin slide"><i class="lauer-user"></i><span>Users</span></a></div>
+          <!-- MENU ITEM-->
+          <div class="item-wrapper"><a class="item-menu-admin slide"><i class="lauer-settings"></i><span>Settings</span></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- / --------- *LEFT MENU END* --------- -->
+  <div class="content-wrapper container-fluid video">
+    <div id="video-bg">
+      <video src="video/settings.mp4" width="100%" height="auto" preload="auto" autoplay="autoplay" loop="loop"></video>
+    </div>
+    <ol class="breadcrumb">
+      <li><a href="#">Developer</a></li>
+      <li class="active" data-action-click="test">Settings</li>
+    </ol>
+    <div class="row">
+      <!-- / ---------- SECTION SETTINGS ----------/-->
+      <div class="col-md-4 text-center menu-grid-settings"><a class="tab-menu mainSettings" href="#">
+          <div class="mask"></div>
+          <div class="wrapper-title">
+            <h4 class="tab-name">MAIN</h4>
+          </div></a></div>
+      <div class="col-md-4 text-center menu-grid-settings"><a class="tab-menu langsSettings" href="#">
+          <div class="mask"></div>
+          <div class="wrapper-title">
+            <h4 class="tab-name">LANGUAGES</h4>
+          </div></a></div>
+      <div class="col-md-4 text-center menu-grid-settings"><a class="tab-menu smtpSettings" href="#">
+          <div class="mask"></div>
+          <div class="wrapper-title">
+            <h4 class="tab-name">SMTP</h4>
+          </div></a></div>
+      <div class="col-md-4 text-center menu-grid-settings"><a class="tab-menu mailSettings" href="#">
+          <div class="mask"></div>
+          <div class="wrapper-title">
+            <h4 class="tab-name">POST</h4>
+          </div></a></div>
+      <div class="col-md-4 text-center menu-grid-settings"><a class="tab-menu contactsSettings" href="#">
+          <div class="mask"></div>
+          <div class="wrapper-title">
+            <h4 class="tab-name">CONTACTS</h4>
+          </div></a></div>
+      <!-- / ------- *SECTION SETTINGS END* -------/-->
+    </div>
+    <!-- /+++++++++++++++++++++ SCRIPTS +++++++++++++++++++++/-->
+    <!--FullScreen js include-->
+    <script src="js/_lib/jquery.fullscreen-min.js"></script>
+    <!--Bootstrap js include-->
+    <script src="js/_lib/bootstrap.min.js"></script>
+    <!--Bootstrap select js-->
+    <script src="js/_lib/bootstrap-select.js"></script>
+    <!--Bootstrap Notify-->
+    <script src="js/_lib/bootstrap-notify.min.js"></script>
+    <!--MouseWheel js-->
+    <script src="js/_lib/jquery.mousewheel.min.js"></script>
+    <!--Scroll pane js-->
+    <script src="js/_lib/jquery.jscrollpane.min.js"></script>
+    <!--Scroll iCheck-->
+    <script src="js/_lib/icheck.min.js"></script>
+    <!-- -------------------------------------------------------->
+    <!--Scripts-->
+    <script src="js/click_actions.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- /++++++++++++++++++* SCRIPTS END *++++++++++++++++++++/-->
+    <footer>
+      <div class="left-column-lauer">
+        <div class="copyright">©2017 Lauer CMS povered for Site.com</div>
+      </div>
+    </footer>
+  </div>
+</body>
