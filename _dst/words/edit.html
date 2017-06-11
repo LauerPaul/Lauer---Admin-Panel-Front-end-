@@ -1,0 +1,47 @@
+<!-- /---------- SECTION WORDS EDIT ----------/ -->
+<section class="edit-block" style="display: none;">
+	<div class="section-head">
+		<div class="top-line">
+			<div class="right-block">
+				<a class="btn-top" data-toggle="tooltip" data-placement="top" title="<?=$this->lng->Get('full_screen')?>">
+					<i class="glyphicon glyphicon-resize-full"></i>
+				</a>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	<h3 class="title">Edit word</h3>
+	<div class="description">edit translation</div>
+	<form class="section-body post" action="/admin/ajax/rending/update/" method="POST" id="rendingEdit" success-function="edit.successUpdate">
+		<div class="input-group margin">
+			<input class="form-control" type="text" placeholder="Enter label word..." name="label" value="<?= $List[DEFAULT_LANGUAGE]['label'] ?>" readonly/>
+			<span class="input-group-addon" data-toggle="tooltip" title="Key word">
+				<i class="lauer-info"></i>
+			</span>
+		</div>
+		<?php
+			foreach ($List as $value) {
+				foreach ($Langs as $lang) {
+					if($lang === $value['language']){
+		?>
+						<div class="input-group margin">
+							<input class="form-control" type="text" placeholder="Enter translate..." name="<?= $value['language'] ?>" value="<?= $value['value'] ?>"/>
+							<span class="input-group-addon lang">
+								<strong><?= strtoupper($value['language']) ?></strong>
+							</span>
+						</div>
+		<?php
+						continue;
+					}
+				}
+			}
+		?>
+		<button class="btn btn-default margin-top-20">
+			<?=$this->lng->Get('Save')?>
+		</button>
+		<button class="btn btn-danger margin-top-20" type="button" data-action-click="backToAddBlockRending" >
+			<?=$this->lng->Get('Cancel')?>
+		</button>
+	</form>
+<!-- /------- *SECTION WORDS EDIT END* -------/ -->
+</section>

@@ -6261,6 +6261,12 @@ form, ul {
   padding-top: 0px;
   margin-bottom: 30px; }
 
+.icheckbox_flat-red {
+  margin-right: 5px; }
+
+label {
+  font-weight: normal; }
+
 /* -------------------------------------*/
 /* -------------- icons --------------- */
 /* ------------------------------------ */
@@ -6715,22 +6721,56 @@ body.mini-menu .content-wrapper.container-fluid {
     margin-top: 20px; }
 
 .wrapper-list {
-  margin-right: -20px; }
+  margin-right: -20px;
+  margin-bottom: 0px; }
+  .wrapper-list.list-group {
+    box-shadow: none;
+    margin: 0; }
+    .wrapper-list.list-group .list-group-item {
+      border: none;
+      box-shadow: none;
+      border-radius: 0;
+      padding: 10px -15px;
+      color: #666666;
+      cursor: pointer;
+      font-family: "OpenSansBold"; }
+      .wrapper-list.list-group .list-group-item.active {
+        background: #6e6eff;
+        text-shadow: none;
+        font-family: "OpenSansLight"; }
+      .wrapper-list.list-group .list-group-item:nth-child(odd) {
+        background: rgba(184, 184, 184, 0.08); }
+      .wrapper-list.list-group .list-group-item .pull-right {
+        display: none; }
+        .wrapper-list.list-group .list-group-item .pull-right i {
+          color: #ffffff; }
+      .wrapper-list.list-group .list-group-item span > i {
+        margin-right: 10px; }
+      .wrapper-list.list-group .list-group-item span.active > i {
+        color: #63d6ff; }
+      .wrapper-list.list-group .list-group-item:hover {
+        background: #ff6b6b;
+        color: #ffffff; }
+        .wrapper-list.list-group .list-group-item:hover .pull-right {
+          display: inline-block; }
   .wrapper-list .item {
     color: #666666;
     padding: 5px 0;
     cursor: pointer;
     margin-right: 20px;
-    display: inline-block;
     font-family: "OpenSansBold";
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis; }
     .wrapper-list .item.w-50 {
-      width: calc(49.5% - 20px); }
+      width: calc(49.5% - 20px);
+      display: inline-block; }
     .wrapper-list .item span {
       display: inline-block;
-      width: 90%; }
+      width: 90%;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis; }
     .wrapper-list .item .pull-right {
       display: none; }
       .wrapper-list .item .pull-right .btn-revove {

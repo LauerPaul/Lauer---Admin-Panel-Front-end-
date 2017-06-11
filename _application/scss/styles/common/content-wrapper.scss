@@ -73,23 +73,82 @@ body.mini-menu .content-wrapper.container-fluid {
 
 .wrapper-list {
     margin-right: -20px;
+    margin-bottom: 0px;
+
+    &.list-group {
+        box-shadow: none;
+        margin: 0;
+
+        .list-group-item {
+            border: none;
+            box-shadow: none;
+            border-radius: 0;
+            padding: 10px -15px;
+            color: $gray;
+            cursor: pointer;
+            font-family: "OpenSansBold";
+
+            &.active {
+                background: $blue;
+                text-shadow: none;
+                font-family: "OpenSansLight";
+            }
+
+            &:nth-child(odd) {
+                background: rgba(184, 184, 184, 0.08);
+            }
+
+            .pull-right {
+                display: none;
+
+                i {
+                    color: #ffffff;
+                }
+
+            }
+
+            span {
+                > i {
+                    margin-right: 10px;
+                }
+
+                &.active {
+                    > i {
+                        color: $light-blue;
+                    }
+                }
+            }
+
+            &:hover {
+                background: $red;
+                color: #ffffff;
+
+                .pull-right { display: inline-block; }
+            }
+        }
+    }
 
     .item {
         color: $gray;
         padding: 5px 0;
         cursor: pointer;
         margin-right: 20px;
-        display: inline-block;
         font-family: "OpenSansBold";
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
 
-        &.w-50 { width: calc(49.5% - 20px); }
+        &.w-50 {
+            width: calc(49.5% - 20px);
+            display: inline-block;
+        }
 
         span {
             display: inline-block;
             width: 90%;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
         }
 
         .pull-right {

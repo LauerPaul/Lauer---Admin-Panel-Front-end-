@@ -1,0 +1,96 @@
+<div class="row">
+	<div class="col-md-7">
+		<!-- /---------- SECTION WORDS ----------/-->
+		<section>
+			<div class="section-head">
+				<div class="top-line">
+					<div class="right-block">
+						<a class="btn-top" data-toggle="tooltip" data-placement="top" title="<?=$this->lng->Get('refresh')?>">
+							<i class="fa fa-refresh"></i>
+						</a>
+						<a class="btn-top" data-toggle="tooltip" data-placement="top" title="<?=$this->lng->Get('full_screen')?>">
+							<i class="glyphicon glyphicon-resize-full"></i>
+						</a>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<h3 class="title">Translations</h3>
+				<div class="description">Developer section</div>
+				<div class="search-line">
+					<div class="input-group">
+						<input class="form-control" type="text" placeholder="<?=$this->lng->Get('Search')?>..."/>
+						<span class="input-group-addon" data-toggle="tooltip" data-placement="top" title="<?=$this->lng->Get('Click_to_find')?>">
+							<i class="fa fa-search"></i>
+						</span>
+					</div>
+					<div class="col-md-4"></div>
+					<div class="col-md-4"></div>
+				</div>
+			</div>
+			<div class="section-body">
+				<div class="results-search">
+					<div class="wrapper-list">
+
+						<?php
+							foreach ($Labels as $value) {
+								$attr_name = 'label-' . mb_strtolower($value['label'], 'UTF-8');
+								$text = $value['label'] . ' - ' . mb_strtolower( $value['value'], 'UTF-8');
+								$confirm = $this->lng->Get('ConfirmRemove') . " '" . $value['label'] ."' ?";
+						?>
+								<!-- ITEM-->
+								<div class="item w-50">
+									<span data-url="<?=Core::gi()->Request->get_link('/admin/rending/edit/'.$attr_name, 'ajax')?>" data-action-click="getItemRending">
+										<?= $text ?>
+									</span>
+									<div class="pull-right">
+										<a class="btn-revove" data-toggle="tooltip" data-placement="top" title="<?=$this->lng->Get('Delete')?>" data-url="/admin/ajax/rending/remove/label-<?=$value['label']?>/" data-action-click="removeItemRending" data-confirm="<?= $confirm ?>">
+											<i class="fa fa-times"></i>
+										</a>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+						<?php
+							}
+						?>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- / ------- *SECTION WORDS END* -------/-->
+	</div>
+	<div class="col-md-5 wrapper-edit-add">
+		<!-- / ---------- SECTION WORDS ----------/-->
+		<section class="add-block">
+			<div class="section-head">
+				<div class="top-line">
+					<div class="right-block">
+						<a class="btn-top" data-toggle="tooltip" data-placement="top" title="Full window section">
+							<i class="glyphicon glyphicon-resize-full"></i>
+						</a>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+			<h3 class="title">Add word</h3>
+			<div class="description">edit translation</div>
+			<form class="section-body post" action="/admin/ajax/rending/save/" id="rendingSave" method="POST" success-function="edit.successAdd" ajax-url="/ajax/admin/rending/">
+				<div class="input-group margin">
+					<input class="form-control" type="text" placeholder="Enter label word..." name="label" required/>
+					<span class="input-group-addon" data-toggle="tooltip" title="Key word">
+						<i class="lauer-info"></i>
+					</span>
+				</div>
+				<?php foreach ($Langs as $lang) { ?>
+					<div class="input-group margin">
+						<input class="form-control" type="text" name="<?=$lang?>" placeholder="<?=$this->lng->Get('Enter')?> <?=mb_strtolower($this->lng->Get('Translate'), 'UTF-8')?>..." <?= $lang == DEFAULT_LANGUAGE ? 'required' : ''?> />
+						<span class="input-group-addon lang">
+							<strong><?= mb_strtoupper($lang, 'UTF-8') ?></strong>
+						</span>
+					</div>
+				<?php } ?>
+				<button class="btn btn-default margin-top-20"><?=$this->lng->Get('Add')?></button>
+			</form>
+		</section>
+		<!-- / ------- *SECTION WORDS END* -------/-->
+	</div>
+</div>
