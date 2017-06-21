@@ -6267,6 +6267,51 @@ form, ul {
 label {
   font-weight: normal; }
 
+.select2-container--default .select2-selection--multiple {
+  border-radius: 25px !important; }
+
+.select2-container--default .select2-search--inline .select2-search__field {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px; }
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+  background-color: #6e6eff;
+  border: none;
+  cursor: default;
+  float: left;
+  margin-right: 3px;
+  margin-top: 7px;
+  border-radius: 25px;
+  padding: 2px 10px;
+  color: white; }
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+  color: #ffffff !important;
+  margin-right: 6px; }
+
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+  border-color: #63d6ff; }
+
+.mce-branding-powered-by {
+  display: none !important; }
+
+.select2-container--default .select2-results__option[aria-selected=true] {
+  background: #ff6b6b;
+  color: #ffffff !important; }
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+  background: #ff6b6b; }
+
+.select2-container--open .select2-dropdown--below {
+  z-index: 2 !important; }
+
+.select2-dropdown {
+  border: none !important;
+  -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.4); }
+
 /* -------------------------------------*/
 /* -------------- icons --------------- */
 /* ------------------------------------ */
@@ -6284,6 +6329,30 @@ label {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   border-radius: 50%; }
+
+.circle-info {
+  width: 16px;
+  height: 16px;
+  background: #b8b8b8;
+  color: white;
+  position: relative;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  margin-left: 10px;
+  font-size: 8px;
+  text-align: center;
+  display: inline-block;
+  line-height: 1.2;
+  padding: 4px 0;
+  top: -2px; }
+  .circle-info.absolute {
+    position: absolute;
+    top: 5px;
+    margin: 0;
+    right: 5px;
+    z-index: 2; }
 
 /* -------------------------------------*/
 /* -------------- header -------------- */
@@ -6398,7 +6467,7 @@ header {
     width: 100%;
     top: -165px;
     opacity: 0.2;
-    height: 160px;
+    height: 140px;
     color: #ffffff;
     position: fixed;
     -webkit-transition: all 0.7s;
@@ -6796,6 +6865,7 @@ footer {
   bottom: 0;
   right: 0;
   left: 220px;
+  z-index: 4;
   -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.2); }
   footer .left-column-lauer {
@@ -6813,7 +6883,7 @@ footer {
   left: 70px; }
 
 /* -------------------------------------*/
-/* ------------- footer --------------- */
+/* ------------- tab-menu ------------- */
 /* ------------------------------------ */
 @keyframes floating {
   0%, 100% {
@@ -6871,7 +6941,7 @@ a.tab-menu {
       animation: floating 2s infinite ease-in-out 0.7s; }
 
 /* -------------------------------------*/
-/* ------------- footer --------------- */
+/* ------------- settings ------------- */
 /* ------------------------------------ */
 .tab-menu.mainSettings {
   background: #ffffff url(../../images/bg/mainSettings.jpg) no-repeat right center; }
@@ -6950,3 +7020,42 @@ a.tab-menu {
 .content-wrapper.container-fluid section.mainSettings {
   padding-left: 25px;
   padding-right: 25px; }
+
+/* -------------------------------------*/
+/* ------------- post page ------------ */
+/* ------------------------------------ */
+.wrapper-image {
+  border: 1px dashed #b8b8b8;
+  padding: 10px;
+  min-height: 150px;
+  position: relative; }
+  .wrapper-image input.hide_file {
+    position: absolute;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    top: 10px;
+    bottom: 10px;
+    right: 10px;
+    left: 10px;
+    opacity: 0;
+    cursor: pointer; }
+  .wrapper-image span.inf {
+    position: absolute;
+    left: -50%;
+    right: -50%;
+    margin: auto;
+    width: 80%;
+    height: 75px;
+    top: -50%;
+    bottom: -50%;
+    color: #c7c7c7;
+    text-align: center; }
+    .wrapper-image span.inf > i {
+      width: 30px;
+      height: 25px;
+      font-size: 27px;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 10px; }
+  .wrapper-image img {
+    position: relative; }
