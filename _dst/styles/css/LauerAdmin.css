@@ -7059,3 +7059,24 @@ a.tab-menu {
       margin-bottom: 10px; }
   .wrapper-image img {
     position: relative; }
+
+.wrapper-preview {
+  max-width: 270px !important; }
+  .wrapper-preview .post-preview-wrapper {
+    width: 192px;
+    border: 1px solid;
+    margin-top: 20px;
+    margin-bottom: 30px; }
+    .wrapper-preview .post-preview-wrapper h4.title {
+      font-family: "OpenSansBold";
+      color: #333333;
+      font-size: 12px;
+      margin: 10px; }
+    .wrapper-preview .post-preview-wrapper .date {
+      font-size: 9px;
+      float: right;
+      margin: 10px; }
+    .wrapper-preview .post-preview-wrapper .description {
+      margin: 10px;
+      color: #666666;
+      font-size: 11px !important; }

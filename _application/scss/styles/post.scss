@@ -41,3 +41,31 @@
 		position: relative;
 	}
 }
+
+.wrapper-preview {
+    max-width: 270px !important;
+
+	.post-preview-wrapper {
+	    width: 192px;
+	    border: 1px solid;
+	    margin-top: 20px;
+	    margin-bottom: 30px;
+
+	    h4.title {
+		    font-family: "OpenSansBold";
+		    color: $gray-dark;
+		    font-size: 12px;
+		    margin: 10px;
+		}
+		.date {
+		    font-size: 9px;
+		    float: right;
+		    margin: 10px;
+   		}
+		.description {
+		    margin: 10px;
+		    color: $gray;
+		    font-size: 11px !important;
+		}
+	}
+}
