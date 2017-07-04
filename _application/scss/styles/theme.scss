@@ -26,6 +26,46 @@ span.new-mini {
 
 form, ul { margin: 0px; }
 
+.input-group.search {
+	@include transition(all 0.2s);
+
+	i.fa-circle-o-notch, a.fa-times {
+		@include transition(all 0.2s);
+		display: none;
+		opacity: 0;
+	}
+
+	i.fa-search {
+		@include transition(all 0.2s);
+		opacity: 1;
+	}
+
+	&.live {
+		i.fa-search, i.fa-circle-o-notch {
+			opacity: 0;
+			display: none;
+		}
+
+		a.fa-times{
+			opacity: 1;
+			display: block;
+		}
+	}
+
+	&.load {
+		i.fa-circle-o-notch {
+			opacity: 1;
+			display: block;
+		}
+
+		i.fa-search, a.fa-times {
+			opacity: 0;
+			display: none;
+		}
+	}
+
+}
+
 .form-control {
 	width: 100%;
 	box-shadow: none;

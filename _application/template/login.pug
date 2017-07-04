@@ -1,0 +1,32 @@
+include include/common/head
+
+body
+	.container-fluid.auth
+		.row
+			.col-md-12
+				.d-flex.align-items-center.justify-content-end(style="min-height: calc(100vh - 54px);")
+					.flex-row(style="width: 100%")
+
+						.login-wrapper.pull-right
+							.row
+								.col-md-6.col-sm-6
+									h3 Авторизация в админ панель
+									p.description Укажите логин и пароль
+
+									form(action="")
+										.input-group
+											input.form-control(type="text", placeholder="Логин администратора")
+										.input-group
+											input.form-control(type="password", placeholder="Пароль")
+										.input-group
+											button.btn.btn-danger Авторизоваться
+								.col-md-6.col-sm-6
+									p(style="color: #b8b8b8; margin-top: 65px;").
+										Если у Вас возникли трудности при авторизации, обратитесь к главному администратору сайта. В случае возникновения проблем с авторизацией главного администратора, обратитесь в службу поддержки - <a href="#"> Lauer agency support</a>.
+
+	footer.container-fluid.login
+		.row
+			.col-md-12.text-center
+				p ©2017 Разработанно в <a href="" target="_blank">"Lauer"</a> для ortdonts.ru
+
+	include include/common/bottom_scripts
